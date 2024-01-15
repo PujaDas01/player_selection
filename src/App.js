@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-const availablePlayers = [
+const players = [
   { id: 1, name: 'Player 1' },
   { id: 2, name: 'Player 2' },
   { id: 3, name: 'Player 3' },
@@ -15,7 +15,6 @@ const availablePlayers = [
 ];
 
 const App = () => {
-  const [players, setPlayers] = useState(availablePlayers);
   const [selectedPlayers, setSelectedPlayers] = useState([]);
 
 const handlePlayerSelection = (player) => {
